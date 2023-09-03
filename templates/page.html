@@ -307,6 +307,7 @@
         #mouse_follower {
             position: absolute;
             width: 100px;
+            pointer-events: none;
         }
     </style>
 </head>
@@ -450,8 +451,8 @@
             var x = e.pageX;
             var y = e.pageY;
             //如果还有点击失效的话就再调整这里的坐标就好
-            pic_mouse.style.left = 5 + x + 'px';
-            pic_mouse.style.top = 5 + y + 'px';
+            pic_mouse.style.left = x + 'px';
+            pic_mouse.style.top = y + 'px';
         })
     </script>
 </body>
